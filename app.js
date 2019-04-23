@@ -4,7 +4,7 @@ let what2 = ['my homework', 'my car', 'my computer', 'my sandwich'];
 let when = ['before the class', 'right in time', 'when I finished', 'during my lunch', 'while I was praying'];
 
 function randomItem(array) {
-    return Math.floor(Math.random() * array.length);
+    return array[Math.floor(Math.random() * array.length)];
 }
 
-excuse.innerHTML = `${who[randomItem(who)]} ${what[randomItem(what)]} ${what2[randomItem(what2)]} ${when[randomItem(when)]}.`;
+excuse.innerHTML = `${randomItem(who)} ${randomItem(what)} ${randomItem(what2)} ${randomItem(when)}.`;
